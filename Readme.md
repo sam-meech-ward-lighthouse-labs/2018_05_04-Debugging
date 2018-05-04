@@ -48,3 +48,11 @@ Add this build script to your project to generate warnings when you add a `TODO:
 ```
 TAGS="TODO:|FIXME:" find "${SRCROOT}" ( -type f -name ".swift" ) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($TAGS).\$" | perl -p -e "s/($TAGS)/ warning: \$1/"
 ```
+
+## Links
+ 
+* Lecture Video:https://www.youtube.com/watch?v=UckmIUiC74A
+* WWDC 2016 video on debugging in Xcode 8: https://developer.apple.com/videos/play/wwdc2016/417/
+* Apple's documentation on debugging: https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/debugging_tools.htmlhttp://ios-compass.lighthouselabs.ca/days/w5d5/activities/141
+* Big Nerd ranch breakpoint wizardy: https://www.bignerdranch.com/blog/xcode-breakpoint-wizardry/
+* Ray Wenderlich Intermediate Debugging with Xcode 8: https://www.raywenderlich.com/152276/intermediate-debugging-xcode-8
